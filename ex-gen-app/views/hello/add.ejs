@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta http-equiv="content-type" charset="UTF-8" content="text/html" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%= title %></title>
+    <link rel="stylesheet", href="/stylesheets/style.css" />
+</head>
+<body>
+    <header>
+        <h1><%= title %></h1>
+    </header>
+    <div role="main">
+        <p><%= content %></p>
+        <form method="post" action="/hello/add">
+            <table>
+                <tr>
+                    <th>NAME</th>
+                    <td><input type="text" name="name"></td>
+                </tr>
+                <tr>
+                    <th>Mail</th>
+                    <td><input type="text" name="mail"></td>
+                </tr>
+                <tr>
+                    <th>AGE</th>
+                    <td><input type="text" name="age"></td>
+                </tr>
+                <tr>
+                    <th></th>
+                    <td><input type="submit" value="add"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
